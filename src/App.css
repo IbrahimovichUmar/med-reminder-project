@@ -10,19 +10,154 @@
 
 .header {
   display: flex;
-  background-color: aqua;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   padding: 20px 0 20px 0px;
 }
 
+.logo__img {
+  padding-right: 15px;
+}
+.text__logo1 {
+  font-family: Prompt;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text__logo2 {
+  color: #00acac;
+  font-family: Prompt;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 .header__logo {
   width: 50%;
+  display: flex;
 }
 .navbar {
   width: 50%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  cursor: pointer;
+  font-family: "Roboto";
 }
 
-.navbar .li {
-  gap: 40px;
+.navbar ul {
+  align-items: center;
+}
+.navbar li {
+  display: inline;
+  margin-left: 40px;
+}
+
+ul li:hover {
+  background: #d9ffff;
+  border-radius: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Marcellus;
+}
+
+a,
+a:hover {
+  color: var(--text-color);
+}
+
+p {
+  word-break: break-word;
+}
+
+.ovhidden {
+  overflow: hidden;
+}
+
+.text_2,
+.text_2:hover {
+  color: var(--text-color-2);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.cursor__dot div {
+  z-index: 999999 !important;
+}
+
+.cursor__dot div:last-child {
+  filter: invert(1);
+  background-color: var(--primary-color) !important;
+}
+
+.cursor__dot div:first-child {
+  filter: invert(1);
+  background-color: var(--overlay-color) !important;
+}
+
+.color_pr {
+  color: var(--primary-color) !important;
+}
+
+.color_sec {
+  color: var(--secondary-color);
+}
+
+.contact__form .form-control {
+  padding: 1.375rem 0.75rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 0 !important;
+  border: 1px solid var(--secondary-color);
+}
+
+.contact__form input.form-control {
+  margin-bottom: 2em;
+  height: calc(2.5em + 0.75rem + 2px);
+}
+
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  z-index: 999999999;
+  background: var(--text-color);
+  transform: translateX(100%);
+  animation: shift-rightwards 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes shift-rightwards {
+  0% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.btn {
+  color: #fff;
 }
