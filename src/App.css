@@ -4,27 +4,51 @@ body {
 .banner {
   height: 100vh;
 }
-.banner p {
-  margin: 0 auto;
-}
 
 .banner__green {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   height: 457px;
   background-color: #00acac;
 }
-.phone__img {
-  margin-left: 25px;
-  margin-top: 1 46px;
-  max-height: 500px;
-  max-width: 500px;
-  background-color: rgb(172, 56, 56);
-}
+
 .banner__text p {
   margin: 0 auto;
   font-size: 54px;
   color: white;
   white-space: pre-line;
+}
+.banner__img {
+  position: absolute;
+  padding-top: 146px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  background-color: aqua;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0 20px 0px;
+}
+
+.header__logo {
+  width: 50%;
+}
+.navbar {
+  width: 50%;
+}
+
+.navbar .li {
+  gap: 40px;
 }
