@@ -3,6 +3,7 @@ import "./App.css";
 //import logo from "./logo.svg";
 import bannerImg from "./assets/images/banner/banner.png";
 import logo from "./assets/images/header/logo.svg";
+
 import appStore from "./assets/images/banner/app-store.png";
 import playStore from "./assets/images/banner/play-store.png";
 import platform1 from "./assets/images/footer/footer-platform1.jpg";
@@ -37,7 +38,7 @@ function App() {
         <div className="banner__content">
           <div className="banner__inner__content">
             <div className="first">
-              <img src={bannerImg} />
+              <img src={bannerImg} alt="/" />
             </div>
             <div className="second">
               <p className="banner__description">
@@ -53,14 +54,14 @@ function App() {
         </div>
         <div className="banner__buttons">
           <a href="https://www.apple.com" target="blanck">
-            <img src={appStore} />
+            <img src={appStore} alt="/" />
           </a>
           <a
             className="app__store"
             href="https://play.google.com"
             target="blanck"
           >
-            <img src={playStore} />
+            <img src={playStore} alt="/" />
           </a>
         </div>
       </div>
@@ -119,12 +120,3 @@ function App() {
 }
 
 export default App;
-
-/*
-
-          <div className="banner__text">
-            
-
-           
-
-          </div> */
