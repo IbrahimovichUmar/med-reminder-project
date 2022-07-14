@@ -176,6 +176,21 @@ p {
   margin-top: 20px;
 }
 
+/* Features */
+
+.features {
+  display: flex;
+  align-items: center;
+}
+.features h1 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 56px;
+  padding: 80px 0px 80px 0px;
+}
+.features img {
+  padding-bottom: 200px;
+}
 /*
 .text_2,
 .text_2:hover {

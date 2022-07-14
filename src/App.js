@@ -8,6 +8,7 @@ import appStore from "./assets/images/banner/app-store.png";
 import playStore from "./assets/images/banner/play-store.png";
 import platform1 from "./assets/images/footer/footer-platform1.jpg";
 import platform2 from "./assets/images/footer/footer-platform2.jpg";
+import featuresImg from "./assets/images/features/features.png";
 
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
@@ -82,6 +83,12 @@ function App() {
               greatest of all medication reminder apps.
             </p>
           </p>
+        </div>
+      </div>
+      <div className="features">
+        <div className="features__content wrapper">
+          <h1 align="center">Features</h1>
+          <img src={featuresImg} alt="/" />
         </div>
       </div>
       <footer>
