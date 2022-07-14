@@ -82,7 +82,7 @@ p {
   margin-left: 40px;
 }
 
-ul li:hover {
+.navbar ul li:hover {
   background: #d9ffff;
   border-radius: 10px;
 }
@@ -130,8 +130,11 @@ ul li:hover {
   height: 100%;
   white-space: pre-line;
   font-size: 54px;
+  font-weight: 400;
+  font-family: "Roboto";
+  line-height: 136%;
   color: white;
-  padding-top: 250px;
+  padding-top: 230px;
 }
 .banner__logo {
   font-size: 60px;
@@ -228,4 +231,69 @@ code {
 .btn {
   color: #fff;
 }
+<<<<<<< HEAD
 */
+.footer__banner {
+  background-color: #000;
+}
+
+.footer__head {
+  display: flex;
+  padding: 20px 0 20px 0px;
+  color: #fff;
+}
+.company__footer {
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.footer__navbar {
+  padding: 20px;
+}
+.footer__head ul {
+  list-style-type: none;
+}
+
+.footer__head li {
+  display: inline;
+  margin-left: 40px;
+}
+.surveys {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px 40px 180px;
+}
+.active__footer {
+  padding-top: 10px;
+}
+.active__footer1 {
+  list-style-type: none;
+}
+
+.footer__platform {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
+
+.footer__icons {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+.insta {
+  padding-right: 40px;
+}
+.twitter {
+  padding-right: 40px;
+}
+.facebook {
+  padding-right: 40px;
+}
