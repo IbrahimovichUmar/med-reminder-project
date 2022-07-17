@@ -1,7 +1,7 @@
 import "./App.css";
 import logo from "./assets/images/header/logo.svg";
-import platform1 from "./assets/images/footer/footer-platform1.jpg";
-import platform2 from "./assets/images/footer/footer-platform2.jpg";
+// import platform1 from "./assets/images/footer/footer-platform1.jpg";
+// import platform2 from "./assets/images/footer/footer-platform2.jpg";
 
 // import ContactUs from "./contact/index";
 
@@ -17,45 +17,88 @@ function App() {
           </div>
           <div className="navbar">
             <ul>
-              <li className="active1">Home</li>
-              <li className="acttive2">About</li>
-              <li className="active3">Features</li>
-              <li className="active4">Contact us</li>
-              <li>Get the app</li>
+              <li className="active1">
+                <a href="/">Home</a>
+              </li>
+              <li className="acttive2">
+                <a href="/">About</a>
+              </li>
+              <li className="active3">
+                <a href="/">Features</a>
+              </li>
+              <li className="active4">
+                <a href="/">Contact us</a>
+              </li>
+              <li>
+                <a href="/">Get the app</a>
+              </li>
             </ul>
           </div>
         </header>
-      </div>
-      <footer>
-        <div className="footer__banner">
-          <div className="wrapper">
-            <div className="footer__head">
-              <p className="company__footer">© MEDREMINDER 2021</p>
-              <ul className="footer__navbar">
-                <li>Resources</li>
-                <li>Surveys</li>
-                <li>Press Releases</li>
-                <li>Careers</li>
-              </ul>
-            </div>
-            <div className="surveys">
-              <ul className="active__footer">
-                <li className="active__footer1">Surveys</li>
-              </ul>
-            </div>
-            <div className="footer__platform">
-              <div className="left">
-                <p>LEFT</p>
-              </div>
-              <div className="right">
-                <img src={platform1} alt="/" />
+        <div className="contact__us">
+          <div class="contact__title">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="box">
+            <div class="contact form">
+              <form>
+                <div class="formBx">
+                  <div class="inputBox">
+                    <span>First Name</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="inputBox">
+                    <span>Last Name</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                </div>
+                <div class="formBx">
+                  <div class="inputBox">
+                    <span>E-mail</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="inputBox">
+                    <span>Phone number (optional)</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                </div>
 
-                <img src={platform2} alt="/" />
-              </div>
+                <div class="inputBox">
+                  <span>Reason</span>
+                  <input type="text" placeholder="" />
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </footer>
+        <br />
+        <div class="inputBox">
+          {" "}
+          <span>Your Message</span>
+          <textarea placeholder=""></textarea>
+        </div>
+      </div>
+      <div className="wrapper">
+        <div class="inputSubmit">
+          <input type="submit" value="Submit" />
+        </div>
+
+        <br />
+        <div className="inputCheckbox">
+          <div className="checkBox__title">
+            <p>By submitting your information, you agree to our</p>
+            <a href="/">Privacy Policy</a>
+          </div>
+          <br />
+          <div className="agree__txt">
+            <form>
+              <input type="checkbox" name="taste" value="pie" />{" "}
+            </form>
+
+            <h3>Agree to terms and conditions</h3>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
