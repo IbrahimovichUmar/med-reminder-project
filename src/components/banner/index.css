@@ -50,7 +50,33 @@
   color: #00acac;
 }
 
-.app__store {
-  justify-content: space-between;
-  padding-left: 90px;
+@media only screen and (max-width: 400px) {
+  .banner__content {
+    height: 520px;
+  }
+  .banner__left {
+    padding-top: 58px;
+  }
+  .banner__right {
+    left: 0;
+    text-align: center;
+  }
+  .banner__description {
+    font-size: 23px;
+    max-width: 200px;
+    padding-top: 390px;
+    margin-left: 100px;
+  }
+  .banner__logo {
+    margin: 0;
+    font-size: 40px;
+  }
+  .banner__buttons {
+    padding-left: 70px;
+    padding-top: 30px;
+  }
+  .banner__logo {
+    font-size: 40px;
+    margin: 0px 0px 0px 80px;
+  }
 }

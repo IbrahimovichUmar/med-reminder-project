@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
 
-import platform1 from "../../assets/images/footer/footer-platform1.jpg";
-import platform2 from "../../assets/images/footer/footer-platform2.jpg";
+// import platform1 from "../../assets/images/footer/footer-platform1.jpg";
+// import platform2 from "../../assets/images/footer/footer-platform2.jpg";
 
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
@@ -28,9 +28,9 @@ export const Footer = () => {
               <p>LEFT</p>
             </div>
             <div className="right">
-              <img src={platform1} alt="/" />
+              {/* <img src={platform1} alt="/" />
 
-              <img src={platform2} alt="/" />
+              <img src={platform2} alt="/" /> */}
             </div>
           </div>
         </div>

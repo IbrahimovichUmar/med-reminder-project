@@ -3,8 +3,14 @@ import bannerLg from "../../assets/images/banner/banner-lg.png";
 import bannerMd from "../../assets/images/banner/banner-md.png";
 import bannerSm from "../../assets/images/banner/banner-sm.png";
 
-import appStore from "../../assets/images/banner/app-store.png";
-import playStore from "../../assets/images/banner/play-store.png";
+import appStoreLg from "../../assets/images/banner/app-store-lg.png";
+import appStoreMd from "../../assets/images/banner/app-store-md.png";
+import appStoreSm from "../../assets/images/banner/app-store-sm.png";
+
+import playStoreLg from "../../assets/images/banner/play-store-lg.png";
+import playStoreMd from "../../assets/images/banner/play-store-md.png";
+import playStoreSm from "../../assets/images/banner/play-store-sm.png";
+
 import "./index.css";
 
 export const Banner = () => {
@@ -16,7 +22,7 @@ export const Banner = () => {
             <picture>
               <source srcset={bannerSm} media="(max-width: 400px)" />
               <source srcset={bannerMd} media="(max-width: 840px)" />
-              <img src={bannerLg} alt="features" />
+              <img src={bannerLg} alt="/" />
             </picture>
           </div>
           <div className="banner__right">
@@ -28,16 +34,23 @@ export const Banner = () => {
               Med<span>reminder</span>
             </p>
             <div className="banner__buttons">
-              <a href="https://www.apple.com" target="blanck">
-                <img src={appStore} alt="/" />
-              </a>
-              <a
-                className="app__store"
-                href="https://play.google.com"
-                target="blanck"
-              >
-                <img src={playStore} alt="/" />
-              </a>
+              <picture>
+                <a href="https://www.apple.com/" target="blanck">
+                  <source srcset={appStoreSm} media="(max-width: 400px)" />
+                  <source srcset={appStoreMd} media="(max-width: 840px)" />
+                  <img src={appStoreLg} alt="/" />
+                </a>
+              </picture>
+              <picture>
+                <a
+                  href="https://play.google.com/store/games?hl=ru/"
+                  target="blanck"
+                >
+                  <source srcset={playStoreSm} media="(max-width: 400px)" />
+                  <source srcset={playStoreMd} media="(max-width: 840px)" />
+                  <img src={playStoreLg} alt="/" />
+                </a>
+              </picture>
             </div>
           </div>
         </div>
