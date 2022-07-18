@@ -1,0 +1,108 @@
+.contact__us {
+  align-items: center;
+}
+.contact__title {
+  display: flex; /*подключить flexbox*/
+  justify-content: center; /*заголовок в центре по горизонтали*/
+  align-items: center; /*заголовок в центре по вертикали*/
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.text_2,
+.text_2:hover {
+  color: var(--text-color-2);
+}
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.inputBox input {
+  height: 70px;
+  background: rgba(98, 244, 244, 0.2);
+  border: none;
+}
+input[type="submit"] {
+  height: 42px;
+  width: 173px;
+  background: #00acac;
+  border: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  border-radius: 9px;
+}
+.inputSubmit {
+  padding-left: 44px;
+  padding-top: 20px;
+}
+
+.inputBox textarea {
+  height: 334px;
+  background: #62f4f433;
+
+  border: none;
+}
+
+.inputBox span {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.inputCheckbox {
+  padding: 48px;
+}
+
+input[type="checkbox"] {
+  padding-left: 30px;
+  height: 36px;
+  width: 36px;
+  left: 216px;
+  top: 3772px;
+  border-radius: 0px;
+}
+.checkBox__title {
+  display: flex;
+}
+
+.checkBox__title a {
+  color: #00acac;
+  margin-left: 10px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.checkBox__title p {
+  font-size: 20px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.agree__txt {
+  display: flex;
+}
+.agree__txt h3 {
+  margin-left: 10px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #8e0909;
+}

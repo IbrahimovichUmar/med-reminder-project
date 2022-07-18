@@ -1,0 +1,19 @@
+.sub__banner {
+  background-color: #62f4f44d;
+}
+
+.sub__banner p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.sub__banner__content {
+  padding: 100px 0px 100px 0px;
+}
+
+.sub__banner__content span {
+  margin-top: 20px;
+}
