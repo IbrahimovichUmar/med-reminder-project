@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 
+
 import appPlatform1 from "../../assets/images/footer/app-platform1.png";
 import appPlatform2 from "../../assets/images/footer/app-platform2.png";
 import appPlatform3 from "../../assets/images/footer/app-platform3.png";
@@ -8,6 +9,7 @@ import appPlatform3 from "../../assets/images/footer/app-platform3.png";
 import playPlatform1 from "../../assets/images/footer/playstore-platform1.png";
 import playPlatform2 from "../../assets/images/footer/playstore-platform2.png";
 import playPlatform3 from "../../assets/images/footer/playstore-platform3.png";
+
 
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
@@ -33,6 +35,11 @@ export const Footer = () => {
               <p>LEFT</p>
             </div>
             <div className="right">
+
+              {/* <img src={platform1} alt="/" />
+
+              <img src={platform2} alt="/" /> */}
+
               <a href="https://www.apple.com/" target="blanck">
                 <picture>
                   <source srcset={appPlatform3} media="(max-width: 400px)" />
@@ -51,6 +58,7 @@ export const Footer = () => {
                   <img src={playPlatform1} alt="/" />
                 </picture>
               </a>
+
             </div>
           </div>
         </div>

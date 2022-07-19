@@ -1,7 +1,14 @@
 import React from "react";
 import "./App.css";
 
-import { Header, Banner, Features, SubBanner, Footer } from "./components";
+import {
+  Header,
+  Banner,
+  Features,
+  SubBanner,
+  Footer,
+  Contact,
+} from "./components";
 
 function App() {
   return (
@@ -10,6 +17,7 @@ function App() {
       <Banner />
       <SubBanner />
       <Features />
+      <Contact />
       <Footer />
     </>
   );
