@@ -5,7 +5,11 @@
   margin: 0 auto;
   padding: 20px 0 20px 0px;
 }
-
+.header__menu {
+  padding: 10px;
+  font-size: 20px;
+  display: none;
+}
 .logo__img {
   padding-right: 15px;
 }
@@ -51,4 +55,45 @@
 .navbar ul li:hover {
   background: #d9ffff;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 840px) {
+  .header__logo {
+    align-items: center;
+    width: 30%;
+  }
+  .logo__img {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  .header__logo p {
+    font-size: 20px;
+  }
+  .navbar {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar {
+    display: none;
+  }
+
+  .header__logo {
+    width: auto;
+  }
+
+  .header__logo p {
+    font-size: 14px;
+  }
+  .header__logo {
+    align-items: center;
+  }
+  .header__menu {
+    display: block;
+  }
+  .logo__img {
+    padding-top: 0px;
+    padding-left: 10px;
+  }
 }

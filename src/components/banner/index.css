@@ -45,12 +45,61 @@
   font-size: 60px;
   margin: 20px 0px 0px 110px;
 }
-
+.banner__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .banner__logo span {
   color: #00acac;
 }
 
-.app__store {
-  justify-content: space-between;
-  padding-left: 90px;
+@media only screen and (max-width: 840px) {
+  .banner__content {
+    height: 260px;
+  }
+  .banner__left {
+    padding-top: 80px;
+  }
+  .banner__description {
+    font-size: 31px;
+    max-width: 360px;
+    padding-top: 120px;
+    margin-left: 0px;
+  }
+  .banner__logo {
+    font-size: 38px;
+    margin: 20px 0px 0px 70px;
+  }
+  .banner__buttons {
+    padding-left: 0px;
+    padding-top: 50px;
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .banner__content {
+    height: 520px;
+  }
+  .banner__left {
+    padding-top: 58px;
+  }
+  .banner__right {
+    left: 0;
+    text-align: center;
+  }
+  .banner__description {
+    font-size: 23px;
+    max-width: 200px;
+    padding-top: 390px;
+    margin-left: 100px;
+  }
+  .banner__logo {
+    font-size: 40px;
+    margin: 0px 0px 0px 50px;
+  }
+  .banner__buttons {
+    padding-left: 70px;
+    padding-top: 30px;
+  }
 }

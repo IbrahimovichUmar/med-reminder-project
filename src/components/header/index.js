@@ -4,11 +4,15 @@ import "./index.css";
 import logoLg from "../../assets/images/header/logo-lg.svg";
 import logoMd from "../../assets/images/header/logo-md.svg";
 import logoSm from "../../assets/images/header/logo-sm.svg";
+import { FiMenu } from "react-icons/fi";
 
 export const Header = () => {
   return (
     <header className="header wrapper">
       <div className="header__logo">
+        <div className="header__menu">
+          <FiMenu />
+        </div>
         <picture>
           <source srcset={logoSm} media="(max-width: 400px)" />
           <source srcset={logoMd} media="(max-width: 840px)" />

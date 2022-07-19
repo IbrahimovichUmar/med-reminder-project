@@ -55,10 +55,69 @@
 }
 .insta {
   padding-right: 40px;
+  font-size: 35px;
 }
 .twitter {
   padding-right: 40px;
+  font-size: 35px;
 }
 .facebook {
   padding-right: 40px;
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 840px) {
+  .footer__head {
+    height: 161px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+  .insta {
+    padding-left: 20px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+  .twitter {
+    padding-left: 20px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+  .facebook {
+    padding-left: 20px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .insta {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  .twitter {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  .facebook {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  .footer__head {
+    height: 147px;
+    font-size: 8px;
+  }
+  .footer__icons {
+    height: 45px;
+  }
+  .footer__navbar {
+    padding: 0;
+  }
+  .company__footer {
+    padding: 0px 0px 0px 10px;
+    margin: 0;
+  }
+  .footer__head li {
+    padding: 0;
+    margin: 15px;
+  }
 }
