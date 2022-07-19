@@ -34,23 +34,23 @@ export const Banner = () => {
               Med<span>reminder</span>
             </p>
             <div className="banner__buttons">
-              <picture>
-                <a href="https://www.apple.com/" target="blanck">
+              <a href="https://www.apple.com/" target="blanck">
+                <picture>
                   <source srcset={appStoreSm} media="(max-width: 400px)" />
                   <source srcset={appStoreMd} media="(max-width: 840px)" />
                   <img src={appStoreLg} alt="/" />
-                </a>
-              </picture>
-              <picture>
-                <a
-                  href="https://play.google.com/store/games?hl=ru/"
-                  target="blanck"
-                >
+                </picture>
+              </a>
+              <a
+                href="https://play.google.com/store/games?hl=ru/"
+                target="blanck"
+              >
+                <picture>
                   <source srcset={playStoreSm} media="(max-width: 400px)" />
                   <source srcset={playStoreMd} media="(max-width: 840px)" />
                   <img src={playStoreLg} alt="/" />
-                </a>
-              </picture>
+                </picture>
+              </a>
             </div>
           </div>
         </div>
