@@ -1,9 +1,8 @@
 import React from "react";
 import "./index.css";
-
-// import { AiOutlineInstagram } from "react-icons/ai";
-// import { FiTwitter } from "react-icons/fi";
-// import { FiFacebook } from "react-icons/fi";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FiTwitter } from "react-icons/fi";
+import { FiFacebook } from "react-icons/fi";
 
 export const Footer = () => {
   return (

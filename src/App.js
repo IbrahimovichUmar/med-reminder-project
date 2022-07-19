@@ -17,8 +17,8 @@ function App() {
       <Banner />
       <SubBanner />
       <Features />
-      <Footer />
       <Contact />
+      <Footer />
     </>
   );
 }

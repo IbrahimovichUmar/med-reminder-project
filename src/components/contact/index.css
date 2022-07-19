@@ -1,6 +1,11 @@
+p {
+  word-break: break-word;
+}
 .contact__us {
   align-items: center;
+  padding: 0px 114px;
 }
+
 .contact__title {
   display: flex; /*подключить flexbox*/
   justify-content: center; /*заголовок в центре по горизонтали*/
@@ -9,10 +14,13 @@
   font-weight: 400;
 }
 
-.text_2,
-.text_2:hover {
-  color: var(--text-color-2);
+.formBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
+
 .inputBox {
   display: flex;
   flex-direction: column;
@@ -38,15 +46,18 @@ input[type="submit"] {
   line-height: 28px;
   border-radius: 9px;
 }
+
 .inputSubmit {
-  padding-left: 44px;
   padding-top: 20px;
 }
 
+.cursor__dot div:first-child {
+  filter: invert(1);
+  background-color: var(--overlay-color) !important;
+}
 .inputBox textarea {
   height: 334px;
   background: #62f4f433;
-
   border: none;
 }
 
@@ -56,10 +67,10 @@ input[type="submit"] {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0em;
-  text-align: left;
 }
+
 .inputCheckbox {
-  padding: 48px;
+  padding-top: 40px;
 }
 
 input[type="checkbox"] {
@@ -84,6 +95,7 @@ input[type="checkbox"] {
   letter-spacing: 0em;
   text-align: left;
 }
+
 .checkBox__title p {
   font-size: 20px;
   font-family: Roboto;
@@ -93,8 +105,12 @@ input[type="checkbox"] {
   letter-spacing: 0em;
   text-align: left;
 }
+.btn {
+  color: #fff;
+}
 .agree__txt {
   display: flex;
+  padding-top: 20px;
 }
 .agree__txt h3 {
   margin-left: 10px;
