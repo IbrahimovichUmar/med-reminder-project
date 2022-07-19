@@ -1,8 +1,13 @@
 import React from "react";
 import "./index.css";
 
-import platform1 from "../../assets/images/footer/footer-platform1.jpg";
-import platform2 from "../../assets/images/footer/footer-platform2.jpg";
+import appPlatform1 from "../../assets/images/footer/app-platform1.png";
+import appPlatform2 from "../../assets/images/footer/app-platform2.png";
+import appPlatform3 from "../../assets/images/footer/app-platform3.png";
+
+import playPlatform1 from "../../assets/images/footer/playstore-platform1.png";
+import playPlatform2 from "../../assets/images/footer/playstore-platform2.png";
+import playPlatform3 from "../../assets/images/footer/playstore-platform3.png";
 
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
@@ -28,26 +33,41 @@ export const Footer = () => {
               <p>LEFT</p>
             </div>
             <div className="right">
-              <img src={platform1} alt="/" />
+              <a href="https://www.apple.com/" target="blanck">
+                <picture>
+                  <source srcset={appPlatform3} media="(max-width: 400px)" />
+                  <source srcset={appPlatform2} media="(max-width: 840px)" />
+                  <img src={appPlatform1} alt="/" />
+                </picture>
+              </a>
 
-              <img src={platform2} alt="/" />
+              <a
+                href="https://play.google.com/store/games?hl=ru/"
+                target="blanck"
+              >
+                <picture>
+                  <source srcset={playPlatform3} media="(max-width: 400px)" />
+                  <source srcset={playPlatform2} media="(max-width: 840px)" />
+                  <img src={playPlatform1} alt="/" />
+                </picture>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div className="footer__icons wrapper">
         <a href="https://www.instagram.com/" className="insta" target="blanck">
-          <AiOutlineInstagram font-size="35px" />
+          <AiOutlineInstagram />
         </a>
         <a href="https://www.twitter.com/" className="twitter" target="blanck">
-          <FiTwitter font-size="35px" />
+          <FiTwitter />
         </a>
         <a
           href="https://www.facebook.com/"
           className="facebook"
           target="blanck"
         >
-          <FiFacebook font-size="35px" />
+          <FiFacebook />
         </a>
       </div>
     </footer>

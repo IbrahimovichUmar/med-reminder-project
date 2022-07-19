@@ -17,3 +17,24 @@
 .sub__banner__content span {
   margin-top: 20px;
 }
+
+@media only screen and (max-width: 840px) {
+  .sub__banner__content {
+    max-width: 760px;
+    padding: 0px 0px 50px 0px;
+  }
+  .sub__banner p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sub__banner__content {
+    padding: 0;
+    height: 387px;
+    max-width: 320px;
+  }
+  .sub__banner p {
+    font-size: 15px;
+  }
+}
